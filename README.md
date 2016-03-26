@@ -1,9 +1,50 @@
 # Apollo
+I bdf at
 Open source DJ for group situations  
 
 # Features
 - Google Play Music
 - Collaborative queue
+
+# Infastructure
+```
+
+	    -------------------------
+	   |  --------------- -----  |
+	   | | Digital Ocean | AWS | |
+	   |  --------------- -----  |
+	   |                         |
+	   | Host                    |
+	    -------------------------
+		      |
+		      |
+		      V
+	    ---------------------
+	   |  -------- --------  |
+	   | | CoreOS | Ubuntu | |
+	   |  -------- --------  |
+	   |                     |
+	   | OS                  |
+	    ---------------------
+		      |
+		      |
+		      V
+                --------------
+               | Apache Mesos |
+                --------------
+                      |
+	              |
+	              V
+                 -------------	  
+                | Kubernertes |
+                 -------------
+                      |
+	              |
+                      V
+     ---------    ---------    --------- 
+    | Service |  | Service |  | Service |
+     ---------    ---------    ---------
+```
 
 # Architecture
 - DJ
