@@ -1,6 +1,5 @@
 # Apollo
-I bdf at
-Open source DJ for group situations  
+Open source DJ for group situations
 
 # Features
 - Google Play Music
@@ -35,7 +34,7 @@ Open source DJ for group situations
                       |
 	              |
 	              V
-                 -------------	  
+                 -------------
                 | Kubernertes |
                  -------------
                       |
