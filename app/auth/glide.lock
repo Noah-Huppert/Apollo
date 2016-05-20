@@ -1,8 +1,8 @@
 hash: 75e3782050bc13d04eddb7aedf0b586f2c0206bfceeb4dd091467f5a3745691c
-updated: 2016-03-15T14:19:23.1205455-04:00
+updated: 2016-05-15T12:15:48.115572393-04:00
 imports:
 - name: github.com/gin-gonic/gin
-  version: 4a6bc4aac4607e253bcda67c8c5bcda693d2388e
+  version: 542be2fe77724f800fcab7eb6c01a4e597fb8506
   subpackages:
   - binding
   - render
@@ -18,4 +18,6 @@ imports:
   - context
 - name: gopkg.in/go-playground/validator.v8
   version: c193cecd124b5cc722d7ee5538e945bdb3348435
+- name: gopkg.in/yaml.v2
+  version: a83829b6f1293c91addabc89d0571c246397bbf4
 devImports: []
