@@ -1,11 +1,10 @@
 package main
 
 import "github.com/gin-gonic/gin"
+import "Apollo/app/auth/http/resp"
 
 func root(c *gin.Context) {
-	c.JSON(200, gin.H{
-		"key": "value",
-	})
+	resp.Resp(c)
 }
 
 func main() {
