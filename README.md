@@ -1,4 +1,4 @@
-# [!Apollo logo](app/frontend/html/media/apollo-logo.png) Apollo
+# ![Apollo logo](app/frontend/html/media/apollo-logo.png) Apollo
 Open source DJ for group situations
 
 # Features
