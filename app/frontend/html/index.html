@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<script src="/bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
+
+		<link rel="import" href="/bower_components/iron-ajax/iron-ajax.html">
+		<link rel="import" href="/bower_components/google-signin/google-signin.html">
+
+		<title>Apollo</title>
+	</head>
+
+	<body>
+		<template is="dom-bind">
+			<iron-ajax
+				auto
+				url="/v1/auth/google/public_config"
+				handle-as="json"
+				last-response="{{publicConfig}}"></iron-ajax>
+
+			<google-signin client-id="{{publicConfig.client_id}}" scopes="profile"></google-signin>
+		</template>
+	</body>
+</html>

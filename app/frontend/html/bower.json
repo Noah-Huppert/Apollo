@@ -1,0 +1,15 @@
+{
+  "name": "apollo-frontend",
+  "homepage": "https://github.com/Noah-Huppert/Apollo",
+  "authors": [
+    "Noah Huppert <noahuppert@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "google-signin": "GoogleWebComponents/google-signin#^1.3.5",
+    "iron-ajax": "PolymerElements/iron-ajax#^1.2.0"
+  }
+}

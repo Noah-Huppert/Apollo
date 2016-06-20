@@ -5,46 +5,6 @@ Open source DJ for group situations
 - Google Play Music
 - Collaborative queue
 
-# Infastructure
-```
-
-	    -------------------------
-	   |  --------------- -----  |
-	   | | Digital Ocean | AWS | |
-	   |  --------------- -----  |
-	   |                         |
-	   | Host                    |
-	    -------------------------
-		      |
-		      |
-		      V
-	    ---------------------
-	   |  -------- --------  |
-	   | | CoreOS | Ubuntu | |
-	   |  -------- --------  |
-	   |                     |
-	   | OS                  |
-	    ---------------------
-		      |
-		      |
-		      V
-                --------------
-               | Apache Mesos |
-                --------------
-                      |
-	              |
-	              V
-                 -------------
-                | Kubernetes |
-                 -------------
-                      |
-	              |
-                      V
-     ---------    ---------    --------- 
-    | Service |  | Service |  | Service |
-     ---------    ---------    ---------
-```
-
 # Behavior
 - Master app will have complete control over queue
     - Remove/Add songs
@@ -87,3 +47,9 @@ Open source DJ for group situations
   - LOW
   - MED
   - HIGH
+
+# Development
+Notation of development ports for services:
+- frontend - `3000`
+- auth - `3001`
+- music-sources/google-play-music - `3002`

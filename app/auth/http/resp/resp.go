@@ -1,37 +1,26 @@
 package resp
 
 import "github.com/gin-gonic/gin"
-import "fmt"
 
 const (
-	AcceptJson string = "application/json"
+	AcceptJson = "application/json"
 	AcceptXML = "application/xml"
 )
 
-func Resp (c *gin.Context) {
+func Resp (data interface{}, status int, c *gin.Context) {
 	accept := c.Request.Header.Get("Accept")
 
-	if len(accept) == 0 {
-		accept = AcceptJson	
-	}
+	if accept == "application/xml" {
+		c.Header("Content-Type", "application/xml")
 
-	switch accept {
-	case AcceptJson:
-		payload :=  gin.H{
-			"status": "Ok",	
-			"Content-Type": "application/json",
-		}
+		c.XML(status, data)
+	} else {
+		c.Header("Content-Type", "application/json")
 
-		fmt.Println(c.Query("json_expanded"))
 		if c.Query("json_expanded") == "true" {
-			c.IndentedJSON(200, payload)
+			c.IndentedJSON(status, data)
 		} else {
-			c.JSON(200, payload)
-		} 
-	case AcceptXML:
-		c.XML(200, gin.H{
-			"status": "Ok",
-			"Content-Type": "application/xml",
-		})
+			c.JSON(status, data)
+		}
 	}
 }
