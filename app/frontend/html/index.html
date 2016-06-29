@@ -17,7 +17,9 @@
 				handle-as="json"
 				last-response="{{publicConfig}}"></iron-ajax>
 
-			<google-signin client-id="{{publicConfig.client_id}}" scopes="profile"></google-signin>
+			<google-signin id="google-signin-button" client-id="[[publicConfig.client_id]]" scopes="[[publicConfig.scopes]]"></google-signin>
 		</template>
+
+		<script src="/js/index.js"></script>
 	</body>
 </html>
