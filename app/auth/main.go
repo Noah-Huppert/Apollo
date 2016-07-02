@@ -47,5 +47,5 @@ func main() {
 	router.GET("/v1/auth/google/public_config", routePublicConfig)
 	router.POST("/v1/auth/google/verify", routeVerify);
 
-	router.Run(":3001")
+	router.Run(":80")
 }
