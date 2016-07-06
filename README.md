@@ -20,3 +20,4 @@ Notation of development ports for services:
 - frontend - `3000`
 - auth - `3001`
 - music-sources/google-play-music - `3002`
+- user - `3003`

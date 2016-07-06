@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"encoding/json"
 	"github.com/gin-gonic/gin"
-	"Apollo/app/auth/http/resp"
+	"app/http/resp"
 )
 
 func routePublicConfig(c *gin.Context) {
@@ -39,7 +39,7 @@ func routeVerify(c *gin.Context) {
 	idTokenResp := GoogleIdTokenVerifyResp{}
 	json.NewDecoder(r.Body).Decode(&idTokenResp)
 	c.String(200, fmt.Sprintf("%#v", idTokenResp))
-
+}
 
 func main() {
 	router := gin.Default()

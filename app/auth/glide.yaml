@@ -1,4 +1,5 @@
-package: Apollo/app/auth
+package: app
 import:
 - package: github.com/gin-gonic/gin
 - package: github.com/dgrijalva/jwt-go
+- package: github.com/jinzhu/gorm
