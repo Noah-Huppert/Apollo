@@ -7,3 +7,7 @@ vendor
 # Vim
 *.swp
 *.swo
+
+# Jetbrains
+.idea
+*.iml
